@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+}
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+.logo img{
+   width: 20px;
+   height: 20px;
+}
+
+img{
+   vertical-align: middle;
+}
+ul{
+   list-style: none;
+}
+/*  navbar part start */
+
+ .menu-bg{background-color: aqua; 
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 0 20px !important;
+}
+.menu-bg img{
+    width: 80px;
+    height: 35px;
+}
+
+/*  navbar part end */
+
+
+/*  banner part start */
+#banner .carousel-item{
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+#banner .carousel-item::after{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(197, 253, 29, 0.29) 35%, rgba(252, 176, 69, 0.235) 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.carousel-inner{
+    position: relative;
+}
+.banner-inner{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.about-head h1{
+    position: relative;
+    padding-bottom: 30px;
+}
+.about-head h1::after{
+    position: absolute;
+    content: " ";
+    height: 4px;
+    width: 320px;
+    background-color: gray;
+    top: 55px;
+    left: 33%;
+
+}
+.about-img{
+    position: relative;
+}
+.about-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(197, 253, 29, 0.29) 35%, rgba(252, 176, 69, 0.235) 100%);
+    top: 0;
+     left: 0;
+   /* { pic er moddhe text maje ye asar jonno }*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+#counter-part{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.ser-item{
+    padding-left: 40px;
+    position: relative;
+}
+.ser-item i{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 25px;
+}
+.team-box{
+    border: 2px solid gold;
+    padding: 50px 30px;
+    text-align: center;
+}
+.team-arr{
+    position: relative;
+}
+.team-arr .next{
+    position: absolute;
+    color: aqua;
+    font-size: 30px;
+    top: 50%;
+    left: 20px;
+}
+.team-arr .prev{
+    position: absolute;
+    color: aqua;
+    font-size: 30px;
+    top: 50%;
+    right: 20px;
+}
+.gall-item{
+    position: relative;
+}
+.gall-over{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(197, 253, 29, 0.29) 35%, rgba(252, 176, 69, 0.235) 100%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.gall-item:hover .gall-over{
+    opacity: 1;
+}
+.gall-over i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.id-details{
+    display: none;
+}
+.ser img{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.ser img:hover{
+    transform: scale(1.3);
+}
